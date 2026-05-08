@@ -799,7 +799,8 @@ PublicKey = {server_pub_key}
 PresharedKey = {client_psk}
 Endpoint = {endpoint}
 AllowedIPs = {allowed_ips}
-PersistentKeepalive = 25",
+PersistentKeepalive = 25
+",
         jc = params.jc,
         jmin = params.jmin,
         jmax = params.jmax,
