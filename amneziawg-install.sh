@@ -2218,7 +2218,8 @@ I1 = <r 2><b 0x858000010001000000000669636c6f756403636f6d0000010001c00c000100010
 PublicKey = ${SERVER_PUB_KEY}
 PresharedKey = ${CLIENT_PRE_SHARED_KEY}
 Endpoint = ${ENDPOINT}
-AllowedIPs = ${ALLOWED_IPS}" >"${HOME_DIR}/${SERVER_AWG_NIC}-client-${CLIENT_NAME}.conf"
+AllowedIPs = ${ALLOWED_IPS}
+PersistentKeepalive = 25" >"${HOME_DIR}/${SERVER_AWG_NIC}-client-${CLIENT_NAME}.conf"
 
 	# Restore default umask
 	umask "${OLD_UMASK}"
@@ -2616,6 +2617,7 @@ PublicKey = ${SERVER_PUB_KEY}
 PresharedKey = ${CLIENT_PRE_SHARED_KEY}
 Endpoint = ${ENDPOINT}
 AllowedIPs = ${ALLOWED_IPS}
+PersistentKeepalive = 25
 EOF
 
 		# Copy regenerated config to the web panel directory (best-effort)
@@ -3560,7 +3562,8 @@ I1 = <r 2><b 0x858000010001000000000669636c6f756403636f6d0000010001c00c000100010
 PublicKey = ${SERVER_PUB_KEY}
 PresharedKey = ${CLIENT_PRE_SHARED_KEY}
 Endpoint = ${ENDPOINT}
-AllowedIPs = ${ALLOWED_IPS}" >"${HOME_DIR}/${SERVER_AWG_NIC}-client-${CLIENT_NAME}.conf"
+AllowedIPs = ${ALLOWED_IPS}
+PersistentKeepalive = 25" >"${HOME_DIR}/${SERVER_AWG_NIC}-client-${CLIENT_NAME}.conf"
 
 	umask "${OLD_UMASK}"
 
